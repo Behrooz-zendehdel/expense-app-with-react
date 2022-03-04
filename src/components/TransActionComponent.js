@@ -1,7 +1,12 @@
 const TransActionComponent = ({ transactions }) => {
     return (
         <section>
-            {transactions.map((t) => <div key={t.id}>{t.desc}</div>)}
+            {transactions.length && transactions.map((t) => <div className="transaction" style={{borderRight:t.type === "expense" && "3px solid red"}} key={t.id}>
+
+                <span>{t.desc}</span>
+                <span>{t.amount}</span>
+
+            </div>)}
         </section>
     );
 }
