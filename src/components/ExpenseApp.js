@@ -17,7 +17,7 @@ const Expensetracker = () => {
         let exp = 0;
         let inc = 0;
         transactions.forEach((t )=> {
-           t.type === "expense" ? (exp = exp + parseFloat(t.amount)) : (inc = parseFloat(inc + t.amount))
+           t.type === "expense" ? (exp = exp + parseFloat(t.amount)) : (inc = inc +  parseFloat( t.amount))
             setExpense(exp)
             setIncome(inc)
         })
