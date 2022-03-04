@@ -30,3 +30,38 @@
   justify-content: space-between;
   align-items: center;
 }
+.expenseBox {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+  padding: 10px;
+  height: 60px;
+  justify-content: space-between;
+}
+.expenseBox span {
+  font-weight: bold;
+  color: green;
+}
+.btn {
+  outline: none;
+  padding: 5px 10px;
+  background-color: #efeffe;
+  color: #6f28f9;
+  border-radius: 5px;
+  border: 1px solid #6f28f9;
+  cursor: pointer;
+}
+.primary {
+  color: #fff;
+  background-color: #6f28f9;
+  cursor: pointer;
+  border: none;
+}
+.cancel {
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
